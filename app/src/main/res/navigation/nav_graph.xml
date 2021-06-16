@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/characterListFragment">
+    app:startDestination="@id/videoListFragment">
 
     <fragment
         android:id="@+id/characterListFragment"
@@ -24,5 +24,10 @@
             android:name="character"
             app:argType="com.example.mvvmsamplewithhiltandcoroutine.model.Result"/>
     </fragment>
+    <fragment
+        android:id="@+id/videoListFragment"
+        android:name="com.example.mvvmsamplewithhiltandcoroutine.view.VideoListFragment"
+        android:label="VideoListFragment"
+        tools:layout="@layout/fragment_video_list"/>
 
 </navigation>
